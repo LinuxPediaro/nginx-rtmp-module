@@ -44,10 +44,12 @@
 * Linux/FreeBSD/MacOS/Windows
 
 ### Build
-
+    mkdir obs
+    cd obs
     wget http://nginx.org/download/nginx-1.15.1.tar.gz
-    git clone ....
+    git clone https://github.com/seoro/nginx-rtmp-module.git
     tar xvzf nginx-1.15.1.tar.gz
+    rm -rf nginx-1.15.1.tar.gz
     cd nginx-1.15.1
     ./configure --add-module=../nginx-rtmp-module
     make
